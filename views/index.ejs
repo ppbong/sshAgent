@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link ref='shortcut icon' href='/image/favicon.ico' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <script src="/javascripts/jquery-3.6.4.min.js"></script>
+    <script src="/javascripts/axios.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <div id='nav'>
+      <div><%= product %><span><%= version %></span></div>
+      <div class="flex"></div>
+      <div><button class="login">Login</button></div>
+    </div>
+    <div id='menu'>
+      <ul>
+        <li class="task" onclick="createTable('task')">任务</li>
+        <li class="machine" onclick="createTable('machine')">主机</li>
+        <li class="tool" onclick="createTable('tool')">工具</li>
+        <li class="resource" onclick="createTable('resource')">下载</li>
+        <li class="syslog" onclick="createTable('syslog')">日志</li>
+        <li class="config" onclick="createTable('config')">设置</li>
+      </ul>
+    </div>
+    <div id='container'></div>
+  </body>
+</html>
